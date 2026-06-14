@@ -1,0 +1,35 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mountain" x1="320" y1="314" x2="704" y2="714" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#BFF7FF"/>
+      <stop offset="0.42" stop-color="#20C7CF"/>
+      <stop offset="1" stop-color="#35B779"/>
+    </linearGradient>
+    <linearGradient id="mountainSoft" x1="372" y1="388" x2="650" y2="716" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EFFFF9"/>
+      <stop offset="0.42" stop-color="#7DEAD9"/>
+      <stop offset="1" stop-color="#7ACF9A"/>
+    </linearGradient>
+    <linearGradient id="shadowGrad" x1="512" y1="260" x2="512" y2="780">
+      <stop offset="0" stop-color="#0D5E62" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#0D5E62" stop-opacity="0.28"/>
+    </linearGradient>
+    <filter id="softShadow" x="196" y="210" width="632" height="620" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="26" stdDeviation="34" flood-color="#0D5E62" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" rx="230" fill="#FFFFFF"/>
+  <circle cx="512" cy="512" r="330" fill="#F4FFFB"/>
+  <circle cx="512" cy="512" r="292" fill="#FFFFFF"/>
+
+  <g filter="url(#softShadow)">
+    <path d="M512 275C478 333 437 401 397 470C359 535 324 596 302 637C285 668 307 706 343 706H681C717 706 739 668 722 637C700 596 665 535 627 470C587 401 546 333 512 275Z" fill="url(#mountain)"/>
+    <path d="M512 275C478 333 437 401 397 470C359 535 324 596 302 637C285 668 307 706 343 706H681C717 706 739 668 722 637C700 596 665 535 627 470C587 401 546 333 512 275Z" fill="url(#shadowGrad)" opacity="0.15"/>
+    <path d="M512 275C492 310 470 347 448 385C474 374 494 374 512 393C530 374 550 374 576 385C554 347 532 310 512 275Z" fill="#F7FFF9"/>
+    <path d="M392 518C422 481 452 471 483 488C505 500 521 500 542 486C573 466 610 481 648 526C676 572 703 621 722 637C739 668 717 706 681 706H343C307 706 285 668 302 637C321 602 353 561 392 518Z" fill="url(#mountainSoft)" opacity="0.72"/>
+  </g>
+
+  <path d="M356 746C438 713 513 707 581 728C629 743 671 764 724 746" stroke="#20C7CF" stroke-width="26" stroke-linecap="round" opacity="0.34"/>
+  <path d="M396 788C474 766 562 766 646 790" stroke="#35B779" stroke-width="20" stroke-linecap="round" opacity="0.24"/>
+</svg>
